@@ -54,7 +54,7 @@ group :development, :test do
   # Using rspec
   gem 'rspec-rails', '~> 3.7'
   # Use Capybara
-  gem 'capybara'
+  gem 'capybara','>=2.15'
   # Use FactoryBot
   gem 'factory_bot_rails'
 end
