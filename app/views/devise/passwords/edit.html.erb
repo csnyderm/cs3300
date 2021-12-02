@@ -6,7 +6,10 @@
         <div class="col-2 col-sm-2 col-md-2"></div>
         <div class="col-4 col-sm-4 col-md-4" style="line-height: 1em;">
             <h4 class="text-white">About Me</h4>
-            <p.not() class="text-muted" style="font-size:11px;">TODO</p>
+            <p.not() class="text-muted" style="font-size:11px;">Hi there, my name is Cole. Friend group always jokes with the spelling being Coal, thus the name
+            of the website. I'm a Computer Security major, love reading, Video Games, and CTFs. I used to do CyberPatriot through High School and now I help an
+            old teacher with the current teams he has as a coach.
+            </p>
         </div>
         <div class="col-2 col-sm-2 col-md-2"></div>
         <div class="col-4 col-sm-4 col-md-4">
@@ -65,8 +68,10 @@
 </div>
 </nav>
 
+<div class="container2">
 <h2>Change your password</h2>
 
+<div class="container3">
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   <%= f.hidden_field :reset_password_token %>
@@ -88,5 +93,7 @@
     <%= f.submit "Change my password" %>
   </div>
 <% end %>
+</div>
+</div>
 
 <%= render "devise/shared/links" %>

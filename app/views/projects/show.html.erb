@@ -6,7 +6,10 @@
         <div class="col-2 col-sm-2 col-md-2"></div>
         <div class="col-4 col-sm-4 col-md-4" style="line-height: 1em;">
             <h4 class="text-white">About Me</h4>
-            <p.not() class="text-muted" style="font-size:11px;">TODO</p>
+            <p.not() class="text-muted" style="font-size:11px;">Hi there, my name is Cole. Friend group always jokes with the spelling being Coal, thus the name
+            of the website. I'm a Computer Security major, love reading, Video Games, and CTFs. I used to do CyberPatriot through High School and now I help an
+            old teacher with the current teams he has as a coach.
+            </p>
         </div>
         <div class="col-2 col-sm-2 col-md-2"></div>
         <div class="col-4 col-sm-4 col-md-4">
@@ -75,7 +78,7 @@
 
 <div class="container2" style="margin-top:50px">
   <div class="container1">
-    <h3> <%= @project.title %> </h3>
+    <h3 style="text-align: center"> <%= @project.title %> </h3>
   </div>
 
   <div class="container3">
@@ -84,9 +87,9 @@
     </h5>
   </div>
   
-  <button type="button" class="btn btn-sm btn-outline-secondary" style="color#666666"><%= link_to 'Back', projects_path %></button>
+  <button type="button" class="btn btn-sm btn-outline-secondary" style="color#666666" onclick="window.location.href='<%= projects_path %>'">Back</button>
   <% if user_signed_in? %>
-    <button type="button" class="btn btn-sm btn-outline-secondary" style="color:#666666"><%= link_to 'Edit', edit_project_path(@project) %></button>
+    <button type="button" class="btn btn-sm btn-outline-secondary" style="color:#666666" onclick="window.location.href='<%= edit_project_path(@project) %>'">Edit</button>
     <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?' } %></button>
   <% end %>
 

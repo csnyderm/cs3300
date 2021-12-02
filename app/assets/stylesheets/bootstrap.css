@@ -66,7 +66,7 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: rgb(139, 235, 230);
   }
   
   [tabindex="-1"]:focus {
@@ -579,14 +579,16 @@
 
   .container2 {
     width: 100%;
+    display: flex;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
     margin-right: auto;
     margin-left: auto;
     outline-style: solid;
     outline-color: black;
+    background-color: rgb(243, 225, 225);
   }
 
   .container3 {
@@ -599,14 +601,13 @@
     padding-right: 15px;
     padding-left: 15px;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    margin-left: 15px;
     outline-style: solid;
     outline-color: black;
-    background-color: gray;
-    color: white;
+    background-color: inherit;
 
     vertical-align: center;
   }
@@ -617,10 +618,6 @@
     }
 
     .container2 {
-      max-width: 540px
-    }
-
-    .container3 {
       max-width: 540px
     }
   }
@@ -634,9 +631,6 @@
       max-width: 720px;
     }
 
-    .container3 {
-      max-width: 540px
-    }
   }
   
   @media (min-width: 992px) {
@@ -648,9 +642,6 @@
       max-width: 960px;
     }
 
-    .container3 {
-      max-width: 540px
-    }
   }
   
   @media (min-width: 1200px) {
@@ -662,9 +653,6 @@
       max-width: 1140px;
     }
 
-    .container3 {
-      max-width: 540px
-    }
   }
   
   .container-fluid {
