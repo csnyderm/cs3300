@@ -4476,9 +4476,11 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgb(243, 225, 225);
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 5px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
   }
   
@@ -4498,9 +4500,10 @@
   }
   
   .card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -ms-flex: 0 1 100px;
+    flex: 0 1 100px;
     padding: 1.25rem;
+    
   }
   
   .card-title {
@@ -4980,7 +4983,7 @@
   .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    background-color: #fff;
+    background-color: rgb(243, 225, 225);
     border-radius: 0.3rem;
   }
   
